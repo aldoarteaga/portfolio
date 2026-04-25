@@ -1,12 +1,12 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="es">
 
     <head>
 
-        <title>Aldo -> sip invite / 200 <-Arteaga</title>
+        <title>Aldo Arteaga</title>
 
-        <meta name="description" content="">
+        <meta name="description" content="Aldo Arteaga — VoIP &amp; Linux Infrastructure Engineer, AWS, Terraform">
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,8 +16,7 @@
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
         <!-- FontAwesome -->
-        <link rel="stylesheet" href="assets/plugins/font-awesome/css/fontawesome.min.css">
-        <link rel="stylesheet" href="assets/plugins/font-awesome/css/brands.min.css">
+        <link rel="stylesheet" href="assets/plugins/font-awesome/css/all.min.css">
 
         <!-- Nivo Lightbox-->
         <link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css" />
@@ -25,13 +24,34 @@
 
         <!-- Main CSS -->
         <link rel="stylesheet" href="assets/css/main.css">
-        
+
         <!-- Themes -->
-        <!--<link rel="stylesheet" href="assets/css/themes.light.css">-->
         <link rel="stylesheet" href="assets/css/themes.dark.css">
-        
-        <!-- Custom CSS -->
-        <!--<link rel="stylesheet" href="assets/css/custom.css">-->
+
+        <style>
+            #lang-toggle {
+                position: fixed;
+                top: 1rem;
+                right: 1rem;
+                z-index: 9999;
+                background: rgba(255, 255, 255, 0.12);
+                color: #fff;
+                border: 2px solid rgba(255, 255, 255, 0.35);
+                border-radius: 20px;
+                padding: 0.35rem 1rem;
+                font-size: 0.8rem;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                cursor: pointer;
+                backdrop-filter: blur(4px);
+                transition: background 0.2s, border-color 0.2s;
+                font-family: 'Lato', sans-serif;
+            }
+            #lang-toggle:hover {
+                background: rgba(255, 255, 255, 0.22);
+                border-color: rgba(255, 255, 255, 0.6);
+            }
+        </style>
 
         <!-- jQuery -->
         <script src="assets/js/jquery.min.js"></script>
@@ -48,6 +68,9 @@
         <!-- Main JS -->
         <script src="assets/js/main.js"></script>
 
+        <!-- Translations -->
+        <script src="assets/js/translations.js"></script>
+
     </head>
 
 <!-- Google tag (gtag.js) -->
@@ -56,11 +79,12 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-5HSFXQL350');
 </script>
 
     <body>
+
+        <button id="lang-toggle">EN</button>
 
         <div class="c-preloader  js-preloader">
             <div class="c-preloader__spinner  t-preloader__spinner"></div>
@@ -73,7 +97,7 @@
             <!-- ################################ -->
             <!-- ############ HEADER ############ -->
             <!-- ################################ -->
-            
+
             <section class="o-section o-section--header  t-section  t-section--header">
                 <div class="c-header">
 
@@ -115,7 +139,7 @@
                                                 </h1>
                                                 <h2 class="a-header  c-brand__sub-title  t-sub-title">
                                                     <span class="c-brand__sizer">
-                                                        Asterisk expert &amp; Linux entusiast
+                                                        <span data-i18n="hero_subtitle">Asterisk expert &amp; Linux entusiasta</span>
                                                     </span>
                                                 </h2>
                                             </div><!-- /c-brand -->
@@ -129,8 +153,8 @@
                                                 </a>
                                             </li>
                                             <li class="a-header">
-                                                <a href="http://sipinvite.net" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-dribbble"></i>
+                                                <a href="https://github.com/lugaid" target="_blank" class="c-social-button  t-social-button">
+                                                    <i class="fab  fa-lg  fa-github"></i>
                                                 </a>
                                             </li>
                                             <li class="a-header">
@@ -151,32 +175,19 @@
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
                                                     <div class="o-content__body">
-                                                        <h4>Location</h4>
+                                                        <h4 data-i18n="location_label">Ubicación</h4>
                                                         <address>
                                                             San Salvador, SV
                                                         </address>
                                                     </div>
                                                 </div><!-- /o-content -->
                                             </div><!-- /o-grid__col -->
-                                            
-                                            <!--
+
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
                                                     <div class="o-content__body">
-                                                        <h4>Phone</h4>
-                                                        <p>
-                                                            534.456.886
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                            
-                                            
-                                            <div class="o-grid__col-md-3  o-grid__col-sm-6">
-                                                <div class="a-header  o-content">
-                                                    <div class="o-content__body">
-                                                        <a href="#" target="_blank" class="t-link-container">
-                                                            <h4>Web</h4>
+                                                        <a href="https://sipinvite.me" target="_blank" class="t-link-container">
+                                                            <h4 data-i18n="web_label">Web</h4>
                                                             <p>
                                                                 <span class="t-link-container__item--blended">
                                                                     sipinvite.me
@@ -186,15 +197,15 @@
                                                     </div>
                                                 </div><!-- /o-content -->
                                             </div><!-- /o-grid__col -->
-                                        
+
                                             <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                                 <div class="a-header  o-content">
                                                     <div class="o-content__body">
-                                                        <a href="#" target="_blank" class="t-link-container">
-                                                            <h4>Email</h4>
+                                                        <a href="mailto:aldo@noyaventures.com" target="_blank" class="t-link-container">
+                                                            <h4 data-i18n="email_label">Email</h4>
                                                             <p>
                                                                 <span class="t-link-container__item--blended">
-                                                                    aldo.arteaga@sipinvite.me
+                                                                    aldo@noyaventures.com
                                                                 </span>
                                                             </p>
                                                         </a><!-- /o-link-container -->
@@ -220,7 +231,7 @@
             <!-- ################################ -->
             <!-- ############ INTRO ############# -->
             <!-- ################################ -->
-            
+
             <section class="o-section  t-section  ">
 
                 <div class="o-section__header-bg  t-section__header"></div>
@@ -231,28 +242,25 @@
 
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
-                                <h2 class="o-section__heading">
+                                <h2 class="o-section__heading" data-i18n="section_intro">
                                     Intro
                                 </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Todo acerca de mi.
+                                <div class="o-content__body  o-section__description" data-i18n="section_intro_desc">
+                                    Todo acerca de mí.
                                 </div>
                             </div>
                         </header><!-- /o-section__header -->
 
                         <div class="o-section__content  t-section__content  ">
-                            
+
                             <div class="o-content">
                                 <div class="c-intro">
                                     <div class="o-content__body">
-                                        <p>
-
-                                            Mi nombre es Aldo Arteaga, poseo mas de 15 años de experiencia en sistemas operativos Linux y mas de 10 años en plataformas de VoIP basadas en Asterisk
-                                            En este tiempo he logrado aplicar mis conocimientos y orientarlos a la mejora de los procesos en las empresas donde he laborado;
-                                            <!--<a href="#" target="_blank">pretium</a>,--> tambien he logrado integrar modernos sistemas de monitoreo y visualización de información de manera agil y clara.
+                                        <p data-i18n="intro_p1">
+                                            Mi nombre es Aldo Arteaga, poseo más de 15 años de experiencia en sistemas operativos Linux y más de 10 años en plataformas de VoIP basadas en Asterisk. A lo largo de mi carrera he aplicado mis conocimientos en la mejora de procesos empresariales, integrando sistemas modernos de monitoreo, visualización de datos y automatización de infraestructura.
                                         </p>
-                                        <p>
-                                            Mi experiencia y buenas practicas me han dado la oportunidad de administrar servidores fisicos y virtuales en datacenters TIER IV, garantizando la maxima disponibilidad de los servicios neurales de las empresas.
+                                        <p data-i18n="intro_p2">
+                                            Mi experiencia abarca desde la administración de servidores físicos y virtuales en datacenters TIER IV, hasta la implementación de infraestructura en la nube con AWS y la automatización del aprovisionamiento con Terraform, garantizando la máxima disponibilidad de los servicios críticos.
                                         </p>
                                     </div>
                                 </div>
@@ -270,7 +278,7 @@
             <!-- ################################ -->
             <!-- ########## EXPERTISE ########### -->
             <!-- ################################ -->
-            
+
             <section class="o-section  t-section  ">
 
                 <div class="o-section__header-bg  t-section__header"></div>
@@ -281,17 +289,17 @@
 
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
-                                <h2 class="o-section__heading">
+                                <h2 class="o-section__heading" data-i18n="section_expertise">
                                     Experticia
                                 </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Ironman estaria celoso.
+                                <div class="o-content__body  o-section__description" data-i18n="section_expertise_desc">
+                                    Iron Man estaría celoso.
                                 </div>
                             </div>
                         </header><!-- /o-section__header -->
 
                         <div class="o-section__content  t-section__content  ">
-                            
+
                             <div class="o-grid">
 
                                 <div class="o-grid__col-sm-6">
@@ -302,9 +310,9 @@
                                             </div>
                                         </div>
                                         <div class="o-media__body  o-content__body">
-                                            <h3>Asterisk</h3>
-                                            <p>
-                                                Adminsitracion de B2BUA, sip proxy, media gateways, sip signaling, ISDN, creacion rutinas dentro de dialplans y administracion via AGIs o realtime.
+                                            <h3 data-i18n="exp01_h3">Asterisk</h3>
+                                            <p data-i18n="exp01_p">
+                                                Administración de B2BUA, SIP proxy, media gateways, señalización SIP, ISDN, creación de rutinas en dialplans y administración vía AGIs o realtime.
                                             </p>
                                         </div>
                                     </div><!-- /o-media o-content -->
@@ -318,9 +326,9 @@
                                             </div>
                                         </div>
                                         <div class="o-media__body  o-content__body">
-                                            <h3>Scripting</h3>
-                                            <p>
-                                                Automatizacion de tareas mediante bash scripting y systemd-timers.
+                                            <h3 data-i18n="exp02_h3">Scripting</h3>
+                                            <p data-i18n="exp02_p">
+                                                Automatización de tareas mediante Bash scripting y systemd-timers.
                                             </p>
                                         </div>
                                     </div><!-- /o-media o-content -->
@@ -334,9 +342,9 @@
                                             </div>
                                         </div>
                                         <div class="o-media__body  o-content__body">
-                                            <h3>TIG Stack</h3>
-                                            <p>
-                                                Mostrar informacion, clara, precisa y oportuna usando Telegraf, Influxdb y Grafana.
+                                            <h3 data-i18n="exp03_h3">TIG Stack</h3>
+                                            <p data-i18n="exp03_p">
+                                                Presentar información clara, precisa y oportuna usando Telegraf, InfluxDB y Grafana.
                                             </p>
                                         </div>
                                     </div><!-- /o-media o-content -->
@@ -350,9 +358,9 @@
                                             </div>
                                         </div>
                                         <div class="o-media__body  o-content__body">
-                                            <h3>Integracion de sistemas</h3>
-                                            <p>
-                                                Interconectar diferentes sistemas para coexistir y poder obtener informacion clara y precisa.
+                                            <h3 data-i18n="exp04_h3">Integración de sistemas</h3>
+                                            <p data-i18n="exp04_p">
+                                                Interconectar diferentes sistemas para coexistir y obtener información clara y precisa.
                                             </p>
                                         </div>
                                     </div><!-- /o-media o-content -->
@@ -366,9 +374,9 @@
                                             </div>
                                         </div>
                                         <div class="o-media__body  o-content__body">
-                                            <h3>Virtualizacion</h3>
-                                            <p>
-                                                Administracion de hypervisores Type 1, SAN, NAS, iSCSI.
+                                            <h3 data-i18n="exp05_h3">Virtualización</h3>
+                                            <p data-i18n="exp05_p">
+                                                Administración de hipervisores Tipo 1, SAN, NAS, iSCSI.
                                             </p>
                                         </div>
                                     </div><!-- /o-media o-content -->
@@ -382,9 +390,41 @@
                                             </div>
                                         </div>
                                         <div class="o-media__body  o-content__body">
-                                            <h3>Trabajo colaborativo</h3>
-                                            <p>
-                                                Uso de metodologias Kanban, scrum y agile.
+                                            <h3 data-i18n="exp06_h3">Trabajo colaborativo</h3>
+                                            <p data-i18n="exp06_p">
+                                                Uso de metodologías Kanban, Scrum y Agile.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-media o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-media  o-media--block  o-content">
+                                        <div class="o-media__figure">
+                                            <div class="c-number  t-primary-color">
+                                                07
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3 data-i18n="exp07_h3">Cloud AWS</h3>
+                                            <p data-i18n="exp07_p">
+                                                Diseño e implementación de infraestructura en AWS: EC2, S3, RDS, VPC, Lambda, CloudWatch y CloudFormation.
+                                            </p>
+                                        </div>
+                                    </div><!-- /o-media o-content -->
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-media  o-media--block  o-content">
+                                        <div class="o-media__figure">
+                                            <div class="c-number  t-primary-color">
+                                                08
+                                            </div>
+                                        </div>
+                                        <div class="o-media__body  o-content__body">
+                                            <h3 data-i18n="exp08_h3">Infrastructure as Code</h3>
+                                            <p data-i18n="exp08_p">
+                                                Aprovisionamiento automatizado de infraestructura con Terraform, promoviendo reproducibilidad y control de cambios.
                                             </p>
                                         </div>
                                     </div><!-- /o-media o-content -->
@@ -404,7 +444,7 @@
             <!-- ################################ -->
             <!-- ############ SKILLS ############ -->
             <!-- ################################ -->
-            
+
             <section class="o-section  t-section  ">
 
                 <div class="o-section__header-bg  t-section__header"></div>
@@ -415,17 +455,17 @@
 
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
-                                <h2 class="o-section__heading">
+                                <h2 class="o-section__heading" data-i18n="section_skills">
                                     Skills
                                 </h2>
-                                <div class="o-content__body  o-section__description">
+                                <div class="o-content__body  o-section__description" data-i18n="section_skills_desc">
                                     Las barras de progreso siempre son buenas.
                                 </div>
                             </div>
                         </header><!-- /o-section__header -->
 
                         <div class="o-section__content  t-section__content  ">
-                            
+
                             <div class="o-grid">
 
                                 <div class="o-grid__col-sm-6">
@@ -442,24 +482,6 @@
                                         </div>
                                         <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
                                             <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="80"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
-                                                    55<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>MySQL</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="55"></div>
                                         </div>
                                     </div>
                                 </div><!-- /o-grid__col -->
@@ -523,24 +545,6 @@
                                         <div class="o-media  o-media--block">
                                             <div class="o-media__figure">
                                                 <div class="c-number  t-primary-color">
-                                                    50<small>%</small>
-                                                </div>
-                                            </div>
-                                            <div class="o-media__body">
-                                                <h3>Nagios</h3>
-                                            </div>
-                                        </div>
-                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
-                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="50"></div>
-                                        </div>
-                                    </div>
-                                </div><!-- /o-grid__col -->
-
-                                <div class="o-grid__col-sm-6">
-                                    <div class="o-content">
-                                        <div class="o-media  o-media--block">
-                                            <div class="o-media__figure">
-                                                <div class="c-number  t-primary-color">
                                                     85<small>%</small>
                                                 </div>
                                             </div>
@@ -550,6 +554,78 @@
                                         </div>
                                         <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
                                             <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="85"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    75<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>AWS</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="75"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    70<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>Terraform</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="70"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    75<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>Docker</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="75"></div>
+                                        </div>
+                                    </div>
+                                </div><!-- /o-grid__col -->
+
+                                <div class="o-grid__col-sm-6">
+                                    <div class="o-content">
+                                        <div class="o-media  o-media--block">
+                                            <div class="o-media__figure">
+                                                <div class="c-number  t-primary-color">
+                                                    55<small>%</small>
+                                                </div>
+                                            </div>
+                                            <div class="o-media__body">
+                                                <h3>MySQL</h3>
+                                            </div>
+                                        </div>
+                                        <div class="c-progress-bar  o-content__body  t-border-color-bg  u-mt-text">
+                                            <div class="a-progress-bar  c-progress-bar__filler  t-primary-bg" data-percent="55"></div>
                                         </div>
                                     </div>
                                 </div><!-- /o-grid__col -->
@@ -586,7 +662,7 @@
             <!-- ################################ -->
             <!-- ########## EXPERIENCE ########## -->
             <!-- ################################ -->
-            
+
             <section class="o-section  t-section  ">
 
                 <div class="o-section__header-bg  t-section__header"></div>
@@ -597,17 +673,17 @@
 
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
-                                <h2 class="o-section__heading">
+                                <h2 class="o-section__heading" data-i18n="section_experience">
                                     Experiencia
                                 </h2>
-                                <div class="o-content__body  o-section__description">
-                                    Si. he estado en algunos lugares.
+                                <div class="o-content__body  o-section__description" data-i18n="section_experience_desc">
+                                    Sí, he estado en algunos lugares.
                                 </div>
                             </div>
                         </header><!-- /o-section__header -->
 
                         <div class="o-section__content  t-section__content  u-pb-0">
-                            
+
                             <div class="a-experience-timeline  c-timeline  t-border-color">
 
                                 <div class="c-timeline__item">
@@ -615,22 +691,22 @@
                                     <div class="o-content">
                                         <div class="o-grid">
                                             <div class="o-grid__col-md-5">
-                                                <div class="c-work__timeframe">
-                                                    2018 &ndash; Present
+                                                <div class="c-work__timeframe" data-i18n="job1_timeframe">
+                                                    2018 &ndash; Presente
                                                 </div>
-                                                <h3 class="c-work__heading">
-                                                    Onelink BPO.
+                                                <h3 class="c-work__heading" data-i18n="job1_company">
+                                                    Onelink BPO
                                                 </h3>
-                                                <h4 class="c-work__title">
+                                                <h4 class="c-work__title" data-i18n="job1_title">
                                                     Regional VoIP Administrator
                                                 </h4>
-                                                <div class="c-work__location">
+                                                <div class="c-work__location" data-i18n="job1_location">
                                                     San Salvador, SV
                                                 </div>
                                             </div>
                                             <div class="o-grid__col-md-7">
-                                                <p>
-                                                    Administracion de media gateways regionales y correcta interconexion de sites y diversos clientes.
+                                                <p data-i18n="job1_desc">
+                                                    Administración de media gateways regionales y correcta interconexión de sitios y clientes.
                                                 </p>
                                             </div>
                                         </div><!-- /o-grid -->
@@ -642,29 +718,27 @@
                                     <div class="o-content">
                                         <div class="o-grid">
                                             <div class="o-grid__col-md-5">
-                                                <div class="c-work__timeframe">
+                                                <div class="c-work__timeframe" data-i18n="job2_timeframe">
                                                     2013 &ndash; 2018
                                                 </div>
-                                                <h3 class="c-work__heading">
+                                                <h3 class="c-work__heading" data-i18n="job2_company">
                                                     Asamblea Legislativa de El Salvador
                                                 </h3>
-                                                <h4 class="c-work__title">
-                                                    Jefe de Telefonia
+                                                <h4 class="c-work__title" data-i18n="job2_title">
+                                                    Jefe de Telefonía
                                                 </h4>
-                                                <div class="c-work__location">
-                                                    San Salvador
+                                                <div class="c-work__location" data-i18n="job2_location">
+                                                    San Salvador, SV
                                                 </div>
                                             </div>
                                             <div class="o-grid__col-md-7">
-                                                <p>
-                                                    Gestion de la telefonia institucional y sus oficinas regionales.
+                                                <p data-i18n="job2_desc">
+                                                    Gestión de la telefonía institucional y sus oficinas regionales.
                                                 </p>
                                             </div>
                                         </div><!-- /o-grid -->
                                     </div><!-- /o-content -->
                                 </div><!-- /c-timeline__item -->
-
-                                
 
                             </div><!-- /c-timeline -->
 
@@ -680,7 +754,7 @@
             <!-- ################################ -->
             <!-- ########### EDUCATION ########## -->
             <!-- ################################ -->
-            
+
             <section class="o-section  t-section  ">
 
                 <div class="o-section__header-bg  t-section__header"></div>
@@ -691,17 +765,17 @@
 
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
-                                <h2 class="o-section__heading">
-                                    Educacion
+                                <h2 class="o-section__heading" data-i18n="section_education">
+                                    Educación
                                 </h2>
-                                <div class="o-content__body  o-section__description">
+                                <div class="o-content__body  o-section__description" data-i18n="section_education_desc">
                                     Siempre aprendiendo algo nuevo.
                                 </div>
                             </div>
                         </header><!-- /o-section__header -->
 
                         <div class="o-section__content  t-section__content  u-pt-0">
-                            
+
                             <div class="o-content">
                                 <div class="a-education-timeline  c-timeline  t-border-color  o-section__full-top-space">
                                     <div class="c-timeline__end  t-border-color"></div>
@@ -711,23 +785,21 @@
                                         <div class="o-content">
                                             <div class="o-grid">
                                                 <div class="o-grid__col-md-5">
-                                                    <div class="c-work__timeframe">
-                                                        2022 &ndash; 2022
+                                                    <div class="c-work__timeframe" data-i18n="edu1_timeframe">
+                                                        2022
                                                     </div>
-                                                    <h3 class="c-work__heading">
-                                                        Linux Profesional Institute
+                                                    <h3 class="c-work__heading" data-i18n="edu1_school">
+                                                        Linux Professional Institute
                                                     </h3>
-                                                    <h4 class="c-work__title">
-                                                        LPIC-1 
+                                                    <h4 class="c-work__title" data-i18n="edu1_cert">
+                                                        LPIC-1
                                                     </h4>
-                                                    <div class="c-work__location">
+                                                    <div class="c-work__location" data-i18n="edu1_location">
                                                         San Salvador, El Salvador
                                                     </div>
                                                 </div>
                                                 <div class="o-grid__col-md-7">
-                                                    <p>
-                                                      <!-- aqui deberia ir un texto  --> 
-                                                    </p>
+                                                    <p></p>
                                                 </div>
                                             </div><!-- /o-grid -->
                                         </div><!-- /o-content -->
@@ -738,23 +810,21 @@
                                         <div class="o-content">
                                             <div class="o-grid">
                                                 <div class="o-grid__col-md-5">
-                                                    <div class="c-work__timeframe">
-                                                        2015 &ndash; 2015
+                                                    <div class="c-work__timeframe" data-i18n="edu2_timeframe">
+                                                        2015
                                                     </div>
-                                                    <h3 class="c-work__heading">
+                                                    <h3 class="c-work__heading" data-i18n="edu2_school">
                                                         Cisco Networking Academy
                                                     </h3>
-                                                    <h4 class="c-work__title">
-                                                        CCNA modules 1,2,3
+                                                    <h4 class="c-work__title" data-i18n="edu2_cert">
+                                                        CCNA módulos 1, 2, 3
                                                     </h4>
-                                                    <div class="c-work__location">
+                                                    <div class="c-work__location" data-i18n="edu2_location">
                                                         San Salvador, El Salvador
                                                     </div>
                                                 </div>
                                                 <div class="o-grid__col-md-7">
-                                                    <p>
-                                                        <!-- aqui deberia ir un texto  -->  
-                                                    </p>
+                                                    <p></p>
                                                 </div>
                                             </div><!-- /o-grid -->
                                         </div><!-- /o-content -->
@@ -765,23 +835,21 @@
                                         <div class="o-content">
                                             <div class="o-grid">
                                                 <div class="o-grid__col-md-5">
-                                                    <div class="c-work__timeframe">
+                                                    <div class="c-work__timeframe" data-i18n="edu3_timeframe">
                                                         2008 &ndash; 2018
                                                     </div>
-                                                    <h3 class="c-work__heading">
+                                                    <h3 class="c-work__heading" data-i18n="edu3_school">
                                                         Universidad Francisco Gavidia
                                                     </h3>
-                                                    <h4 class="c-work__title">
-                                                        Ingenieria en Telecomunicaciones
+                                                    <h4 class="c-work__title" data-i18n="edu3_degree">
+                                                        Ingeniería en Telecomunicaciones
                                                     </h4>
-                                                    <div class="c-work__location">
+                                                    <div class="c-work__location" data-i18n="edu3_location">
                                                         San Salvador, El Salvador
                                                     </div>
                                                 </div>
                                                 <div class="o-grid__col-md-7">
-                                                    <p>
-                                                        <!-- aqui deberia ir un texto  --> 
-                                                    </p>
+                                                    <p></p>
                                                 </div>
                                             </div><!-- /o-grid -->
                                         </div><!-- /o-content -->
@@ -799,16 +867,10 @@
 
 
 
-            
-
-
-            
-        
-
             <!-- ################################ -->
             <!-- ############ FOOTER ############ -->
             <!-- ################################ -->
-            
+
             <section class="o-section  t-section  o-section--footer">
 
                 <div class="o-section__header-bg  t-section__header"></div>
@@ -819,24 +881,24 @@
 
                         <header class="o-section__header  t-section__header">
                             <div class="o-content">
-                                <h2 class="o-section__heading">
+                                <h2 class="o-section__heading" data-i18n="section_contact">
                                     Contacto
                                 </h2>
-                                <div class="o-content__body  o-section__description">
+                                <div class="o-content__body  o-section__description" data-i18n="section_contact_desc">
                                     Call me, maybe.
                                 </div>
                             </div>
                         </header><!-- /o-section__header -->
 
                         <div class="o-section__content  t-section__content  ">
-                            
+
                                 <div class="c-footer__contact">
                                     <div class="o-grid">
 
                                     <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                         <div class="o-content">
                                             <div class="o-content__body">
-                                                <h4>Location</h4>
+                                                <h4 data-i18n="footer_location_label">Ubicación</h4>
                                                 <address>
                                                     San Salvador, SV
                                                 </address>
@@ -844,13 +906,11 @@
                                         </div><!-- /o-content -->
                                     </div><!-- /o-grid__col -->
 
-                                    
-
                                     <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                         <div class="o-content">
                                             <div class="o-content__body">
-                                                <a href="#" target="_blank" class="t-link-container">
-                                                    <h4>Web</h4>
+                                                <a href="https://sipinvite.me" target="_blank" class="t-link-container">
+                                                    <h4 data-i18n="footer_web_label">Web</h4>
                                                     <p>
                                                         <span class="t-link-container__item--blended">
                                                             sipinvite.me
@@ -864,11 +924,11 @@
                                     <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                         <div class="o-content">
                                             <div class="o-content__body">
-                                                <a href="#" target="_blank" class="t-link-container">
-                                                    <h4>Email</h4>
+                                                <a href="mailto:aldo@noyaventures.com" target="_blank" class="t-link-container">
+                                                    <h4 data-i18n="footer_email_label">Email</h4>
                                                     <p>
                                                         <span class="t-link-container__item--blended">
-                                                            aldo.arteaga@sipinvite.me
+                                                            aldo@noyaventures.com
                                                         </span>
                                                     </p>
                                                 </a><!-- /o-link-container -->
@@ -909,8 +969,8 @@
                                                 </a>
                                             </li>
                                             <li class="a-footer">
-                                                <a href="http://sipinvite.me" target="_blank" class="c-social-button  t-social-button">
-                                                    <i class="fab  fa-lg  fa-dribbble"></i>
+                                                <a href="https://github.com/lugaid" target="_blank" class="c-social-button  t-social-button">
+                                                    <i class="fab  fa-lg  fa-github"></i>
                                                 </a>
                                             </li>
                                             <li class="a-footer">
